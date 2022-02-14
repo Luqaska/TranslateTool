@@ -1,4 +1,3 @@
-const getenv = require('getenv');
 const Nertivia = require("nertivia.js");
 const client = new Nertivia.Client();
 const translate = require('translate-google');
@@ -57,5 +56,5 @@ client.on("message", msg => {
 
 })
 
-require('./server')();
-client.login(getenv('TOKEN'));
+//require('./server')();
+client.login("[TOKEN]");
