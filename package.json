@@ -11,8 +11,6 @@
   "author": "Luqaska",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.2",
-    "getenv": "^1.0.0",
     "moji-translate": "^1.0.8",
     "nertivia.js": "^1.3.18",
     "translate-google": "^1.5.0"
