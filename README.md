@@ -1,6 +1,10 @@
 # Translate:Tool
 for Nertivia
 
+## Requirements
+- Python
+- Node.js
+
 ## Install
 1. Put your bot token on the last line, replacing the placeholder.
 2. `npm install`.
