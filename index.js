@@ -38,9 +38,9 @@ client.on("message", msg => {
 
   /* Commands */
   if (command === "trans") {
-    var lang = ctx.shift();
+    var lang = ctx.shift().toLowerCase();
     var text = ctx.join(" ");
-    if(lang.toLowerCase() == ("moji" || "emoji")){
+    if(lang == "moji" || lang == "emoji"){
       msg.send(moji.translate(text));
     }else{
       translate(text, {to: lang}).then(res => {
@@ -50,7 +50,7 @@ client.on("message", msg => {
       })
     }
   } else if (command === "about-trans") {
-    msg.send("**Translate:Tool** v1.0.0\n\nPowered by **[link: translate.google.com -> Google Translate]** and **[link: github.com/notwaldorf/emoji-translate -> Emoji Translate]**\n(via [link: npmjs.com/package/translate-google -> translate-google] and [link: npmjs.com/package/moji-translate -> moji-translate])\n\n**Author:** some:dude\n\nHuge thanks to the Nertivia official guild, for the help\nhttps://github.com/luqaska/TranslateTool")
+    msg.send("**Translate:Tool** v1.0.1\n\nPowered by **[link: translate.google.com -> Google Translate]** and **[link: github.com/notwaldorf/emoji-translate -> Emoji Translate]**\n(via [link: npmjs.com/package/translate-google -> translate-google] and [link: npmjs.com/package/moji-translate -> moji-translate])\n\n**Author:** some:dude\n\nHuge thanks to the Nertivia official guild, for the help\nhttps://github.com/luqaska/TranslateTool")
   }
 
 
