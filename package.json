@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node bot.js"
   },
   "keywords": [],
   "author": "Luqaska",
-  "license": "MIT",
+  "license": "BSL-1.0",
   "dependencies": {
     "moji-translate": "^1.0.8",
     "nertivia.js": "^1.3.18",
